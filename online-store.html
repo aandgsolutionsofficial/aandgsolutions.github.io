@@ -758,6 +758,39 @@
 
     <script src="script.js"></script>
 
+    <script>
+        /* ONLINE STORE MENU FIX - uses this page's menu IDs */
+        const menuToggle = document.getElementById("menuToggle");
+        const menuOverlay = document.getElementById("menuOverlay");
+        const closeMenu = document.getElementById("closeMenu");
+
+        if (menuToggle && menuOverlay) {
+            menuToggle.addEventListener("click", function () {
+                menuOverlay.classList.add("active");
+                menuOverlay.setAttribute("aria-hidden", "false");
+                menuToggle.setAttribute("aria-expanded", "true");
+            });
+        }
+
+        if (closeMenu && menuOverlay) {
+            closeMenu.addEventListener("click", function () {
+                menuOverlay.classList.remove("active");
+                menuOverlay.setAttribute("aria-hidden", "true");
+                if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
+            });
+        }
+
+        if (menuOverlay) {
+            menuOverlay.addEventListener("click", function (event) {
+                if (event.target === menuOverlay) {
+                    menuOverlay.classList.remove("active");
+                    menuOverlay.setAttribute("aria-hidden", "true");
+                    if (menuToggle) menuToggle.setAttribute("aria-expanded", "false");
+                }
+            });
+        }
+    </script>
+
 
     <!-- =================================================
          ONLINE STORE JAVASCRIPT
