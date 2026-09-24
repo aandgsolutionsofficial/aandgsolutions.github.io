@@ -18,10 +18,12 @@ if (year) {
 ===================================================== */
 
 const menuButton =
-    document.getElementById("menuButton");
+    document.getElementById("menuButton") ||
+    document.getElementById("menuToggle");
 
 const closeButton =
-    document.getElementById("closeButton");
+    document.getElementById("closeButton") ||
+    document.getElementById("closeMenu");
 
 const menuOverlay =
     document.getElementById("menuOverlay");
