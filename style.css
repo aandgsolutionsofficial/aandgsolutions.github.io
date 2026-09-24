@@ -32,8 +32,7 @@ a {
 }
 
 button,
-input,
-textarea {
+input {
     font-family: inherit;
 }
 
@@ -45,6 +44,7 @@ textarea {
 .background {
     position: fixed;
     inset: 0;
+
     z-index: -10;
 
     background:
@@ -58,8 +58,10 @@ textarea {
 
 
 /* =====================================================
+   =====================================================
    FIRST PAGE ONLY
    INDEX.HTML
+   =====================================================
 ===================================================== */
 
 
@@ -68,6 +70,7 @@ textarea {
 .top-header {
     width: 100%;
     height: 85px;
+
     padding: 0 7%;
 
     display: flex;
@@ -79,6 +82,7 @@ textarea {
     position: relative;
     z-index: 20;
 }
+
 
 .top-header .logo {
     font-size: 24px;
@@ -99,14 +103,17 @@ textarea {
     height: 48px;
 
     border: 1px solid #292929;
+
     background: #101010;
 
     display: flex;
     flex-direction: column;
+
     align-items: center;
     justify-content: center;
 
     gap: 5px;
+
     cursor: pointer;
 
     transition: 0.3s ease;
@@ -119,6 +126,7 @@ textarea {
 .top-header .menu-btn span {
     width: 20px;
     height: 2px;
+
     background: #ffffff;
 }
 
@@ -127,6 +135,7 @@ textarea {
 
 .landing {
     min-height: calc(100vh - 145px);
+
     padding: 100px 7% 70px;
 
     display: flex;
@@ -161,8 +170,11 @@ textarea {
 
 .intro h1 {
     font-size: clamp(48px, 8vw, 90px);
+
     line-height: 1;
+
     letter-spacing: -4px;
+
     margin-bottom: 25px;
 }
 
@@ -172,11 +184,13 @@ textarea {
 
 .description {
     max-width: 600px;
+
     margin: auto;
 
     color: #777777;
 
     font-size: 15px;
+
     line-height: 1.8;
 }
 
@@ -185,9 +199,11 @@ textarea {
 
 .options {
     width: 100%;
+
     max-width: 1000px;
 
     display: grid;
+
     grid-template-columns: repeat(2, 1fr);
 
     gap: 20px;
@@ -197,66 +213,92 @@ textarea {
 /* OPTION CARD */
 
 .option-card {
+
     min-height: 210px;
+
     padding: 35px;
 
     display: flex;
+
     align-items: center;
+
     gap: 25px;
 
     text-align: left;
 
     background: #101010;
+
     border: 1px solid #242424;
 
     cursor: pointer;
+
     position: relative;
 
     transition: 0.35s ease;
 }
 
 .option-card:hover {
+
     transform: translateY(-7px);
+
     border-color: #c69b25;
+
     background: #131313;
 }
 
+
 .option-card .icon {
+
     width: 65px;
     height: 65px;
 
     flex-shrink: 0;
 
     display: flex;
+
     align-items: center;
     justify-content: center;
 
     background: #181818;
+
     border: 1px solid #292929;
 
     font-size: 28px;
 }
 
+
 .option-card .card-content {
     flex: 1;
 }
 
+
 .option-card h2 {
+
     font-size: 21px;
+
     margin-bottom: 10px;
 }
 
+
 .option-card p {
+
     color: #777777;
+
     font-size: 13px;
+
     line-height: 1.6;
 }
 
+
 .option-card .arrow {
+
     color: #c69b25;
+
     font-size: 28px;
+
     transition: 0.3s ease;
 }
+
 
 .option-card:hover .arrow {
     transform: translateX(8px);
@@ -266,17 +308,23 @@ textarea {
 /* FIRST PAGE FOOTER */
 
 body > footer {
+
     width: 100%;
+
     min-height: 60px;
+
     padding: 20px 7%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
 
     color: #444444;
+
     font-size: 12px;
 
     border-top: 1px solid #171717;
@@ -288,31 +336,42 @@ body > footer {
 ===================================================== */
 
 .menu-overlay {
+
     position: fixed;
+
     inset: 0;
 
-    z-index: 999999;
+    z-index: 999;
 
     display: flex;
+
     justify-content: flex-end;
 
     background: rgba(0, 0, 0, 0.78);
+
     backdrop-filter: blur(8px);
 
     opacity: 0;
+
     visibility: hidden;
 
     transition: 0.3s ease;
 }
 
 .menu-overlay.active {
+
     opacity: 1;
+
     visibility: visible;
 }
 
+
 .menu-box {
+
     width: 360px;
+
     max-width: 90%;
+
     height: 100%;
 
     padding: 90px 40px;
@@ -328,11 +387,14 @@ body > footer {
     transition: 0.35s ease;
 }
 
+
 .menu-overlay.active .menu-box {
     transform: translateX(0);
 }
 
+
 .close-btn {
+
     position: absolute;
 
     top: 25px;
@@ -352,13 +414,19 @@ body > footer {
     cursor: pointer;
 }
 
+
 .close-btn:hover {
+
     border-color: #c69b25;
+
     color: #c69b25;
 }
 
+
 .menu-logo {
+
     font-size: 25px;
+
     font-weight: 800;
 
     letter-spacing: 1px;
@@ -366,16 +434,22 @@ body > footer {
     margin-bottom: 55px;
 }
 
+
 .menu-logo span {
     color: #c69b25;
 }
 
+
 .menu-box nav {
+
     display: flex;
+
     flex-direction: column;
 }
 
+
 .menu-box nav a {
+
     padding: 18px 12px;
 
     color: #888888;
@@ -385,24 +459,37 @@ body > footer {
     transition: 0.3s ease;
 }
 
+
 .menu-box nav a:hover {
+
     color: #c69b25;
+
     padding-left: 22px;
 }
 
 
 /* =====================================================
-   SHOP PAGES
+   =====================================================
+   SHOP PAGES ONLY
+   SHOP.HTML / REPAIR.HTML / DISPLAY.HTML
+   =====================================================
 ===================================================== */
 
+
+/* SHOP HEADER */
+
 .shop-header {
+
     width: 100%;
+
     height: 85px;
 
     padding: 0 7%;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     background: rgba(7, 7, 7, 0.95);
@@ -410,14 +497,20 @@ body > footer {
     border-bottom: 1px solid #1c1c1c;
 
     position: relative;
+
     z-index: 50;
 }
 
+
 .shop-header .logo {
+
     font-size: 24px;
+
     font-weight: 800;
+
     letter-spacing: 2px;
 }
+
 
 .shop-header .logo span {
     color: #c69b25;
@@ -427,16 +520,20 @@ body > footer {
 /* SHOP MENU */
 
 .shop-header .menu-btn {
+
     width: 48px;
     height: 48px;
 
     background: #101010;
+
     border: 1px solid #292929;
 
     display: flex;
+
     flex-direction: column;
 
     justify-content: center;
+
     align-items: center;
 
     gap: 5px;
@@ -444,11 +541,14 @@ body > footer {
     cursor: pointer;
 }
 
+
 .shop-header .menu-btn:hover {
     border-color: #c69b25;
 }
 
+
 .shop-header .menu-btn span {
+
     width: 20px;
     height: 2px;
 
@@ -459,14 +559,17 @@ body > footer {
 /* SHOP HERO */
 
 .shop-hero {
+
     min-height: 650px;
 
     padding: 100px 7%;
 
     display: flex;
+
     align-items: center;
 
     position: relative;
+
     overflow: hidden;
 
     background:
@@ -478,7 +581,9 @@ body > footer {
         #080808;
 }
 
+
 .shop-hero::after {
+
     content: "";
 
     width: 500px;
@@ -500,19 +605,25 @@ body > footer {
         0 0 0 160px rgba(198, 155, 37, 0.015);
 }
 
+
 .shop-hero-content {
+
     max-width: 750px;
 
     position: relative;
+
     z-index: 2;
 }
 
+
 .shop-hero .small-title {
+
     display: inline-block;
 
     color: #c69b25;
 
     font-size: 12px;
+
     font-weight: 700;
 
     letter-spacing: 4px;
@@ -520,7 +631,9 @@ body > footer {
     margin-bottom: 20px;
 }
 
+
 .shop-hero h1 {
+
     font-size: clamp(48px, 7vw, 88px);
 
     line-height: 0.98;
@@ -530,11 +643,14 @@ body > footer {
     margin-bottom: 28px;
 }
 
+
 .shop-hero h1 span {
     color: #c69b25;
 }
 
+
 .shop-hero p {
+
     max-width: 650px;
 
     color: #777777;
@@ -550,6 +666,7 @@ body > footer {
 /* HERO BUTTONS */
 
 .hero-buttons {
+
     display: flex;
 
     gap: 15px;
@@ -557,8 +674,10 @@ body > footer {
     flex-wrap: wrap;
 }
 
+
 .gold-btn,
 .outline-btn {
+
     min-height: 52px;
 
     padding: 0 28px;
@@ -566,6 +685,7 @@ body > footer {
     display: inline-flex;
 
     align-items: center;
+
     justify-content: center;
 
     font-size: 12px;
@@ -577,17 +697,25 @@ body > footer {
     transition: 0.3s ease;
 }
 
+
 .gold-btn {
+
     background: #c69b25;
+
     color: #080808;
 }
 
+
 .gold-btn:hover {
+
     background: #e0b63c;
+
     transform: translateY(-2px);
 }
 
+
 .outline-btn {
+
     background: transparent;
 
     border: 1px solid #383838;
@@ -595,8 +723,11 @@ body > footer {
     color: #ffffff;
 }
 
+
 .outline-btn:hover {
+
     border-color: #c69b25;
+
     color: #c69b25;
 }
 
@@ -607,20 +738,25 @@ body > footer {
 .why-section,
 .shop-contact,
 .price-section {
+
     padding: 110px 7%;
 }
+
 
 .services-section {
     background: #090909;
 }
 
+
 .why-section {
     background: #070707;
 }
 
+
 .shop-contact {
     background: #090909;
 }
+
 
 .price-section {
     background: #090909;
@@ -630,6 +766,7 @@ body > footer {
 /* SECTION HEADING */
 
 .section-heading {
+
     max-width: 700px;
 
     margin: 0 auto 60px;
@@ -637,12 +774,15 @@ body > footer {
     text-align: center;
 }
 
+
 .section-heading .small-title {
+
     display: block;
 
     color: #c69b25;
 
     font-size: 12px;
+
     font-weight: 700;
 
     letter-spacing: 4px;
@@ -650,7 +790,9 @@ body > footer {
     margin-bottom: 15px;
 }
 
+
 .section-heading h2 {
+
     font-size: clamp(34px, 5vw, 55px);
 
     letter-spacing: -2px;
@@ -658,7 +800,9 @@ body > footer {
     margin-bottom: 20px;
 }
 
+
 .section-heading p {
+
     color: #707070;
 
     font-size: 14px;
@@ -666,8 +810,11 @@ body > footer {
     line-height: 1.7;
 }
 
+
 .gold-line {
+
     width: 55px;
+
     height: 2px;
 
     margin: 0 auto 20px;
@@ -679,6 +826,7 @@ body > footer {
 /* SERVICES GRID */
 
 .service-grid {
+
     max-width: 1250px;
 
     margin: auto;
@@ -690,7 +838,9 @@ body > footer {
     gap: 20px;
 }
 
+
 .service-card {
+
     min-height: 360px;
 
     padding: 35px 30px;
@@ -700,36 +850,48 @@ body > footer {
     border: 1px solid #222222;
 
     position: relative;
+
     overflow: hidden;
 
     transition: 0.35s ease;
 }
 
+
 .service-card:hover {
+
     transform: translateY(-7px);
+
     border-color: #c69b25;
 }
 
+
 .service-number {
+
     position: absolute;
 
     top: 20px;
+
     right: 22px;
 
     color: #292929;
 
     font-size: 35px;
+
     font-weight: 800;
 }
 
+
 .service-icon {
+
     width: 58px;
     height: 58px;
 
     margin-bottom: 28px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     background: #181818;
@@ -739,12 +901,17 @@ body > footer {
     font-size: 24px;
 }
 
+
 .service-card h3 {
+
     font-size: 21px;
+
     margin-bottom: 14px;
 }
 
+
 .service-card p {
+
     color: #777777;
 
     font-size: 13px;
@@ -754,7 +921,9 @@ body > footer {
     margin-bottom: 25px;
 }
 
+
 .service-link {
+
     color: #c69b25;
 
     font-size: 11px;
@@ -772,11 +941,14 @@ body > footer {
     gap: 10px;
 }
 
+
 .service-link span {
+
     font-size: 18px;
 
     transition: 0.3s ease;
 }
+
 
 .service-link:hover span {
     transform: translateX(7px);
@@ -786,6 +958,7 @@ body > footer {
 /* WHY GRID */
 
 .why-grid {
+
     max-width: 1100px;
 
     margin: auto;
@@ -797,7 +970,9 @@ body > footer {
     gap: 15px;
 }
 
+
 .why-box {
+
     min-height: 220px;
 
     padding: 32px 25px;
@@ -807,19 +982,25 @@ body > footer {
     border: 1px solid #222222;
 }
 
+
 .why-box strong {
+
     color: #c69b25;
 
     font-size: 12px;
 }
 
+
 .why-box h3 {
+
     font-size: 18px;
 
     margin: 20px 0 12px;
 }
 
+
 .why-box p {
+
     color: #707070;
 
     font-size: 13px;
@@ -831,15 +1012,19 @@ body > footer {
 /* REPAIR STATUS */
 
 .repair-status {
+
     padding: 110px 7%;
 
     background: #0c0c0c;
 
     border-top: 1px solid #1d1d1d;
+
     border-bottom: 1px solid #1d1d1d;
 }
 
+
 .status-content {
+
     max-width: 800px;
 
     margin: auto;
@@ -847,13 +1032,17 @@ body > footer {
     text-align: center;
 }
 
+
 .status-content h2 {
+
     font-size: clamp(32px, 5vw, 52px);
 
     margin-bottom: 15px;
 }
 
+
 .status-content > p {
+
     color: #707070;
 
     margin-bottom: 30px;
@@ -861,7 +1050,9 @@ body > footer {
     line-height: 1.7;
 }
 
+
 .status-form {
+
     max-width: 650px;
 
     margin: auto;
@@ -869,7 +1060,9 @@ body > footer {
     display: flex;
 }
 
+
 .status-form input {
+
     flex: 1;
 
     height: 55px;
@@ -885,11 +1078,14 @@ body > footer {
     color: #ffffff;
 }
 
+
 .status-form input:focus {
     border-color: #c69b25;
 }
 
+
 .status-form button {
+
     padding: 0 25px;
 
     border: none;
@@ -903,13 +1099,17 @@ body > footer {
     cursor: pointer;
 }
 
+
 .status-error {
+
     color: #c69b25;
 
     margin-top: 20px;
 }
 
+
 .status-result-box {
+
     max-width: 650px;
 
     margin: 25px auto 0;
@@ -923,11 +1123,14 @@ body > footer {
     border: 1px solid #292929;
 }
 
+
 .status-result-box strong {
     color: #c69b25;
 }
 
+
 .status-result-box p {
+
     color: #777777;
 
     font-size: 13px;
@@ -939,78 +1142,85 @@ body > footer {
 /* CONTACT GRID */
 
 .contact-grid {
-    max-width: 1100px;
+
+    max-width: 1000px;
 
     margin: auto;
 
     display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    gap: 22px;
+    gap: 20px;
 }
 
+
 .contact-card {
-    padding: 35px 30px;
 
-    background: rgba(255, 255, 255, 0.025);
+    padding: 35px 25px;
 
-    border: 1px solid rgba(198, 155, 37, 0.16);
+    text-align: center;
+
+    background: #101010;
+
+    border: 1px solid #222222;
 
     transition: 0.3s ease;
 }
 
+
 .contact-card:hover {
+
     transform: translateY(-5px);
 
-    border-color: rgba(198, 155, 37, 0.55);
-
-    background: rgba(198, 155, 37, 0.035);
+    border-color: #c69b25;
 }
 
+
 .contact-icon {
+
     width: 55px;
     height: 55px;
+
+    margin: 0 auto 20px;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 
-    margin-bottom: 22px;
+    background: #181818;
 
-    border: 1px solid rgba(198, 155, 37, 0.45);
+    border: 1px solid #292929;
 
     color: #c69b25;
 
-    font-size: 23px;
+    font-size: 13px;
+
+    font-weight: 700;
 }
 
-.contact-card .small-title {
-    display: block;
-    margin-bottom: 8px;
-}
 
 .contact-card h3 {
-    color: #ffffff;
 
-    font-size: 21px;
+    font-size: 18px;
 
-    margin: 0 0 12px;
+    margin-bottom: 10px;
 }
 
+
 .contact-card p {
-    color: rgba(255, 255, 255, 0.65);
 
-    line-height: 1.7;
+    color: #777777;
 
-    margin-bottom: 20px;
+    font-size: 13px;
 }
 
 
 /* SHOP FOOTER */
 
 .shop-footer {
+
     padding: 55px 7%;
 
     text-align: center;
@@ -1020,7 +1230,9 @@ body > footer {
     border-top: 1px solid #1d1d1d;
 }
 
+
 .shop-footer .logo {
+
     font-size: 24px;
 
     font-weight: 800;
@@ -1030,11 +1242,14 @@ body > footer {
     margin-bottom: 15px;
 }
 
+
 .shop-footer .logo span {
     color: #c69b25;
 }
 
+
 .shop-footer > p {
+
     color: #666666;
 
     font-size: 13px;
@@ -1042,7 +1257,9 @@ body > footer {
     margin-bottom: 10px;
 }
 
+
 .shop-footer .copyright {
+
     color: #444444;
 
     margin-top: 25px;
@@ -1054,6 +1271,7 @@ body > footer {
 ===================================================== */
 
 .price-list {
+
     max-width: 1000px;
 
     margin: 45px auto 0;
@@ -1065,7 +1283,9 @@ body > footer {
     border-top: 1px solid #292929;
 }
 
+
 .price-row {
+
     min-height: 100px;
 
     padding: 25px 30px;
@@ -1087,7 +1307,9 @@ body > footer {
     transition: 0.3s ease;
 }
 
+
 .price-row:hover {
+
     background: #151515;
 
     padding-left: 38px;
@@ -1095,7 +1317,9 @@ body > footer {
     border-left-color: #c69b25;
 }
 
+
 .price-row h3 {
+
     color: #ffffff;
 
     font-size: 18px;
@@ -1103,13 +1327,17 @@ body > footer {
     margin-bottom: 7px;
 }
 
+
 .price-row p {
+
     color: #777777;
 
     font-size: 13px;
 }
 
+
 .price-row strong {
+
     color: #c69b25;
 
     font-size: 18px;
@@ -1121,6 +1349,7 @@ body > footer {
 /* PRICE NOTE */
 
 .price-note {
+
     max-width: 1000px;
 
     margin: 35px auto 0;
@@ -1132,13 +1361,17 @@ body > footer {
     border-left: 3px solid #c69b25;
 }
 
+
 .price-note h3 {
+
     color: #c69b25;
 
     margin-bottom: 8px;
 }
 
+
 .price-note p {
+
     color: #777777;
 
     font-size: 13px;
@@ -1150,12 +1383,15 @@ body > footer {
 /* DISPLAY SEARCH */
 
 .display-search {
+
     max-width: 1000px;
 
     margin: 40px auto 25px;
 }
 
+
 .display-search input {
+
     width: 100%;
 
     height: 55px;
@@ -1173,6 +1409,7 @@ body > footer {
     font-size: 14px;
 }
 
+
 .display-search input:focus {
     border-color: #c69b25;
 }
@@ -1181,6 +1418,7 @@ body > footer {
 /* DISPLAY TABLE */
 
 .display-table {
+
     max-width: 1000px;
 
     margin: auto;
@@ -1188,8 +1426,10 @@ body > footer {
     border-top: 1px solid #292929;
 }
 
+
 .display-table-header,
 .display-row {
+
     display: grid;
 
     grid-template-columns:
@@ -1203,7 +1443,9 @@ body > footer {
     gap: 20px;
 }
 
+
 .display-table-header {
+
     padding: 18px 25px;
 
     background: #171717;
@@ -1219,7 +1461,9 @@ body > footer {
     text-transform: uppercase;
 }
 
+
 .display-row {
+
     min-height: 75px;
 
     padding: 18px 25px;
@@ -1235,166 +1479,22 @@ body > footer {
     transition: 0.3s ease;
 }
 
+
 .display-row:hover {
+
     background: #151515;
 
     border-left-color: #c69b25;
 }
 
+
 .display-row strong {
+
     color: #c69b25;
 
     font-size: 16px;
 
     white-space: nowrap;
-}
-
-
-/* =====================================================
-   ABOUT PAGE
-===================================================== */
-
-.about-content {
-    max-width: 1100px;
-
-    margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: 1.3fr 0.7fr;
-
-    gap: 60px;
-
-    align-items: center;
-}
-
-.about-text p {
-    color: rgba(255, 255, 255, 0.72);
-
-    line-height: 1.9;
-
-    font-size: 16px;
-
-    margin-bottom: 20px;
-}
-
-.about-highlight {
-    border-left: 1px solid rgba(198, 155, 37, 0.45);
-
-    padding-left: 30px;
-}
-
-.about-highlight-item {
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    padding: 18px 0;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.about-highlight-item strong {
-    color: #c69b25;
-
-    font-size: 14px;
-
-    letter-spacing: 1px;
-}
-
-.about-highlight-item span {
-    color: #ffffff;
-
-    font-size: 15px;
-}
-
-
-/* =====================================================
-   BUSINESS HOURS
-===================================================== */
-
-.hours-box {
-    max-width: 850px;
-
-    margin: 0 auto;
-
-    border-top: 1px solid rgba(198, 155, 37, 0.3);
-}
-
-.hours-row {
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding: 18px 5px;
-
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.hours-row span {
-    color: rgba(255, 255, 255, 0.68);
-}
-
-.hours-row strong {
-    color: #ffffff;
-
-    font-weight: 500;
-}
-
-
-/* =====================================================
-   FLOATING WHATSAPP BUTTON
-===================================================== */
-
-.whatsapp-float {
-    position: fixed;
-
-    right: 24px;
-    bottom: 24px;
-
-    width: 58px;
-    height: 58px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: #25D366;
-
-    color: #ffffff;
-
-    border-radius: 50%;
-
-    text-decoration: none;
-
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
-
-    z-index: 99999;
-
-    transition:
-        transform 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.whatsapp-float svg {
-    width: 31px;
-    height: 31px;
-
-    fill: #ffffff;
-
-    display: block;
-}
-
-.whatsapp-float:hover {
-    transform: translateY(-5px) scale(1.08);
-
-    box-shadow:
-        0 12px 30px rgba(37, 211, 102, 0.35);
 }
 
 
@@ -1412,15 +1512,372 @@ body > footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .product-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 650px) {
 
+    /* FIRST PAGE */
+
+    .top-header {
+
+        height: 75px;
+
+        padding: 0 5%;
+    }
+
+
+    .top-header .logo {
+        font-size: 19px;
+    }
+
+
+    .landing {
+
+        min-height: calc(100vh - 135px);
+
+        padding: 75px 5% 50px;
+    }
+
+
+    .intro h1 {
+
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .options {
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+
+    .option-card {
+
+        min-height: 175px;
+
+        padding: 25px 20px;
+
+        gap: 18px;
+    }
+
+
+    .option-card .icon {
+
+        width: 55px;
+
+        height: 55px;
+
+        font-size: 23px;
+    }
+
+
+    .option-card h2 {
+
+        font-size: 18px;
+    }
+
+
+    /* SHOP */
+
+    .shop-header {
+
+        height: 75px;
+
+        padding: 0 5%;
+    }
+
+
+    .shop-header .logo {
+
+        font-size: 19px;
+    }
+
+
+    .shop-hero {
+
+        min-height: 580px;
+
+        padding: 75px 5%;
+    }
+
+
+    .shop-hero h1 {
+
+        font-size: 48px;
+
+        letter-spacing: -2px;
+    }
+
+
+    .shop-hero p {
+
+        font-size: 14px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    .gold-btn,
+    .outline-btn {
+
+        width: 100%;
+    }
+
+
+    .services-section,
+    .why-section,
+    .shop-contact,
+    .price-section {
+
+        padding: 80px 5%;
+    }
+
+
+    .service-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .service-card {
+
+        min-height: auto;
+    }
+
+
+    .why-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .status-form {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .status-form input,
+    .status-form button {
+
+        width: 100%;
+
+        height: 55px;
+    }
+
+
+    .price-row {
+
+        padding: 22px 18px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .price-row:hover {
+
+        padding-left: 23px;
+    }
+
+
+    .price-row strong {
+
+        font-size: 17px;
+    }
+
+
+    .price-note {
+
+        padding: 20px;
+    }
+
+
+    .display-table-header {
+        display: none;
+    }
+
+
+    .display-row {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+
+        padding: 20px;
+    }
+
+
+    .display-row strong {
+
+        text-align: right;
+    }
+
+
+    .menu-box {
+
+        width: 100%;
+
+        max-width: 100%;
+
+        padding-left: 30px;
+
+        padding-right: 30px;
+    }
+
+}
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.about-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr 0.7fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text p {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.9;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.about-highlight {
+    border-left: 1px solid rgba(198, 155, 37, 0.45);
+    padding-left: 30px;
+}
+
+.about-highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.about-highlight-item strong {
+    color: #c69b25;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.about-highlight-item span {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+/* ================================
+   CONTACT PAGE
+================================ */
+
+.contact-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.contact-card {
+    padding: 35px 30px;
+    background: rgba(255, 255, 255, 0.025);
+    border: 1px solid rgba(198, 155, 37, 0.16);
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(198, 155, 37, 0.55);
+    background: rgba(198, 155, 37, 0.035);
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border: 1px solid rgba(198, 155, 37, 0.45);
+    color: #c69b25;
+    font-size: 23px;
+}
+
+.contact-card .small-title {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-card h3 {
+    color: #ffffff;
+    font-size: 21px;
+    margin: 0 0 12px;
+}
+
+.contact-card p {
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* ================================
+   BUSINESS HOURS
+================================ */
+
+.hours-box {
+    max-width: 850px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(198, 155, 37, 0.3);
+}
+
+.hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hours-row span {
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.hours-row strong {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ================================
+   RESPONSIVE - NEW PAGES
+================================ */
+
+@media (max-width: 768px) {
     .about-content {
         grid-template-columns: 1fr;
         gap: 35px;
@@ -1428,12 +1885,8 @@ body > footer {
 
     .about-highlight {
         border-left: none;
-
-        border-top:
-            1px solid rgba(198, 155, 37, 0.45);
-
+        border-top: 1px solid rgba(198, 155, 37, 0.45);
         padding-left: 0;
-
         padding-top: 15px;
     }
 
@@ -1452,11 +1905,46 @@ body > footer {
     .hours-row strong {
         text-align: right;
     }
+}
 
+/* ================================
+   FLOATING WHATSAPP BUTTON
+================================ */
+
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #25D366;
+    color: #ffffff;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.45);
+    z-index: 99999;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float svg {
+    width: 31px;
+    height: 31px;
+    fill: #ffffff;
+    display: block;
+}
+
+.whatsapp-float:hover {
+    transform: translateY(-5px) scale(1.08);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.35);
+}
+
+@media (max-width: 768px) {
     .whatsapp-float {
         right: 18px;
         bottom: 18px;
-
         width: 54px;
         height: 54px;
     }
@@ -1465,175 +1953,6 @@ body > footer {
         width: 29px;
         height: 29px;
     }
-
-}
-
-
-/* =====================================================
-   SMALL MOBILE
-===================================================== */
-
-@media (max-width: 650px) {
-
-    .top-header {
-        height: 75px;
-        padding: 0 5%;
-    }
-
-    .top-header .logo {
-        font-size: 19px;
-    }
-
-    .landing {
-        min-height: calc(100vh - 135px);
-        padding: 75px 5% 50px;
-    }
-
-    .intro h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
-    }
-
-    .options {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-
-    .option-card {
-        min-height: 175px;
-
-        padding: 25px 20px;
-
-        gap: 18px;
-    }
-
-    .option-card .icon {
-        width: 55px;
-        height: 55px;
-
-        font-size: 23px;
-    }
-
-    .option-card h2 {
-        font-size: 18px;
-    }
-
-
-    /* SHOP */
-
-    .shop-header {
-        height: 75px;
-        padding: 0 5%;
-    }
-
-    .shop-header .logo {
-        font-size: 19px;
-    }
-
-    .shop-hero {
-        min-height: 580px;
-        padding: 75px 5%;
-    }
-
-    .shop-hero h1 {
-        font-size: 48px;
-        letter-spacing: -2px;
-    }
-
-    .shop-hero p {
-        font-size: 14px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .gold-btn,
-    .outline-btn {
-        width: 100%;
-    }
-
-    .services-section,
-    .why-section,
-    .shop-contact,
-    .price-section {
-        padding: 80px 5%;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        min-height: auto;
-    }
-
-    .why-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .status-form {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .status-form input,
-    .status-form button {
-        width: 100%;
-        height: 55px;
-    }
-
-    .price-row {
-        padding: 22px 18px;
-
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        gap: 12px;
-    }
-
-    .price-row:hover {
-        padding-left: 23px;
-    }
-
-    .price-row strong {
-        font-size: 17px;
-    }
-
-    .price-note {
-        padding: 20px;
-    }
-
-    .display-table-header {
-        display: none;
-    }
-
-    .display-row {
-        grid-template-columns: 1fr 1fr;
-
-        gap: 12px;
-
-        padding: 20px;
-    }
-
-    .display-row strong {
-        text-align: right;
-    }
-
-    .menu-box {
-        width: 100%;
-        max-width: 100%;
-
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
 }
 
 
